@@ -4,8 +4,8 @@
 ![](https://img.shields.io/badge/license-MIT-blue)
 
 > **PowerPool** is a high-performance object pooling framework for Unity designed for
-> **zero-allocation runtime**, **O(1) return complexity**,  
-> and **memory-safe lifecycle control**.
+> **zero-allocation runtime**,  
+> **O(1) return complexity**, and **memory-safe lifecycle control**.
 
 By combining **stack-allocated builder patterns**, **version-based safety validation**,
 and **cache-friendly data structures**, PowerPool enables extremely efficient
