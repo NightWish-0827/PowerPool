@@ -16,9 +16,10 @@ Unlike conventional pooling systems that simply enable/disable objects,
 PowerPool provides a **fully engineered lifecycle architecture** focused on
 **performance**, **memory safety**, and **developer usability**.
 
-<img width="797" height="90" alt="image" src="https://github.com/user-attachments/assets/67a707ab-46cb-4bb6-bc4a-39dfe6650b54" />
+<img width="797" height="90" alt="image" src="https://github.com/user-attachments/assets/67a707ab-46cb-4bb6-bc4a-39dfe6650b54" />  
 
-`https://github.com/NightWish-0827/PowerPool.git?path=/com.nightwishlab.powerpool` UPM Add package from git URL
+`https://github.com/NightWish-0827/PowerPool.git?path=/com.nightwishlab.powerpool`  
+UPM Add package from git URL
 
 ---
 
