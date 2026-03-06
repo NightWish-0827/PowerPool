@@ -1,0 +1,10 @@
+{
+  "name": "com.nightwishlab.powerpool",
+  "version": "1.0.0",
+  "displayName": "PowerPool",
+  "description": "The 'Highest Performing' Pool System available in pure Unity",
+  "unity": "2021.3",
+  "author": {
+    "name": "NightWish"
+  }
+}
