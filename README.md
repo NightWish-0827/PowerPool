@@ -508,6 +508,42 @@ This allows teams to **analyze memory usage and pooling behavior in real time**.
 
 ---
 
+# Performance Comparison
+
+**Zero Allocation**
+
+PowerPool adopts **a stack-allocated builder pattern** based on **ref structs**,  
+eliminating any heap allocations when setting up object spawning.
+
+The Rent and Return operations for objects are also completely **allocation-free**,  
+fundamentally preventing GC spikes (frame drops) that occur during pooling.
+
+**O(1) Return Overhead**
+
+Typical pooling systems require additional runtime lookups,  
+such as dictionary lookups,  
+to determine which pool an object belongs to when returning it.
+
+In contrast, each **PoolHandle<T>** in PowerPool holds a direct reference to the  
+Pool instance that created it,  
+eliminating the need for hash lookups,  
+type checks, or runtime pool lookups.  
+
+Returns are performed in O(1) constant time.
+
+**Zero Runtime GetComponent Lookup Cost**
+
+Components implementing the **IPoolCleanable interface** are cached only once, 
+**at object creation (prewarm/instantiate).**
+
+When an object is returned to the pool,  
+the OnReturnToPool() method is called directly through the cached array,  
+so there is no additional GetComponent traversal overhead at runtime.
+
+<img width="1600" height="1200" alt="unnamed (2)" src="https://github.com/user-attachments/assets/01236128-ef27-499a-a2d7-a310ddaba46c" />
+
+---
+
 # Editor Supports
 
 > Provide Tracker Window at Editor level It allows you to track the states of objects.
