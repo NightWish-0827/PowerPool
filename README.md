@@ -568,6 +568,8 @@ This is the noise from the Stop call on the **Editor**, **so it is safe to ignor
 
 However, if this occurs in a Dev Build or non-forced shutdown situation, the Pool Manager or object return cycle you designed is not complete.
 
+---
+
 ### In a word...
 
 PowerPool is not just another object pool.
@@ -582,3 +584,5 @@ architecture capable of supporting even the most demanding runtime workloads.
 **High performance pooling should be invisible.**
 
 PowerPool makes that possible.
+
+---
